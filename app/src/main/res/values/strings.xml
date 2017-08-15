@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">YipYap</string>
+    <string name="title_activity_start">startActivity</string>
+    <string name="title_activity_how_to">howToActivity</string>
+    <string name="title_activity_record">recordActivity</string>
+    <string name="title_activity_config">configActivity</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="records">Records</string>
+    <string name="start_game">Start Game</string>
+    <string name="yipyap">YipYap</string>
+    <string name="back">Back</string>
+    <string name="how_to_play2">How to Play:</string>
+    <string name="instructions">YipYap is a pass-to-play word game. After setting up the game, each player will input a single word related to the topic before passing the phone on to the next player. At the end, there is an option to save the story. Have fun creating stories with friends! </string>
+    <string name="start_game2">Start Game</string>
+    <string name="recordsHeader">Records</string>
+</resources>

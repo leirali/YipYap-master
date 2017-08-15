@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Pre-Game Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/settingScreen"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Game Topic:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gameTopic"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@+id/settingScreen"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/random"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBaseline="@+id/gameTopic"
+        android:layout_alignBottom="@+id/gameTopic"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:layout_alignBaseline="@+id/playerAdd"
+        android:layout_alignBottom="@+id/playerAdd"
+        android:layout_alignStart="@+id/random" />
+
+    <TextView
+        android:text="Add Players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/playerAdd"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/random"
+        android:layout_alignStart="@+id/gameTopic" />
+
+    <TextView
+        android:text="Player 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:layout_alignStart="@+id/playerAdd"
+        android:layout_marginTop="18dp"
+        android:id="@+id/playersAdded"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Player 2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playersAdded"
+        android:layout_alignStart="@+id/playersAdded"
+        android:id="@+id/player2"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Game Mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:id="@+id/gameMode"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+    <Switch
+        android:text="Time Based"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/timeSwitch"
+        android:layout_below="@+id/gameMode"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/player2"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/back" />
+
+    <Button
+        android:text="Start Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/back"
+        android:layout_alignEnd="@+id/add"
+        android:id="@+id/startGame" />
+
+    <Switch
+        android:text="Turn Based"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/turnSwitch"
+        android:layout_below="@+id/timeSwitch"
+        android:layout_alignEnd="@+id/timeSwitch" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Topic:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/topicBox"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Player's Turn:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/playerTurn"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/topicBox"
+        android:layout_alignStart="@+id/topicBox" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/enterWordsText"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/home" />
+
+    <Button
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/done" />
+
+    <TextView
+        android:id="@+id/roundsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rounds Left:"
+        android:layout_alignTop="@+id/topicBox"
+        android:layout_alignEnd="@+id/done"
+        android:layout_marginEnd="20dp" />
+
+    <TextView
+        android:id="@+id/enterWordsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/playerTurn"
+        android:layout_below="@+id/playerTurn"
+        android:layout_marginTop="16dp"
+        android:text="Enter Words Here:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/wordsPosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/enterWordsText"
+        android:layout_below="@+id/enterWordsText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:imeOptions="actionNext"/>
+
+    <TextView
+        android:id="@+id/wordHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wordsPosted"
+        android:layout_alignStart="@+id/wordsPosted"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="39dp"
+        android:layout_alignEnd="@+id/gameProgress" />
+
+    <ProgressBar
+        android:id="@+id/gameProgress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/roundsLeft"
+        android:layout_alignTop="@+id/enterWordsText"
+        android:layout_toEndOf="@+id/wordsPosted" />
+
+    <TextView
+        android:id="@+id/wordsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/roundsLeft"
+        android:layout_alignTop="@+id/playerTurn"
+        android:text="Words Left: " />
+
+</RelativeLayout>
